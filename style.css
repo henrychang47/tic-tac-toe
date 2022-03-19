@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 60%;
+  text-align: center;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+
+body {
+
+}
+
+#gameBoard {
+  --size: 60vmin;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto 5vh;
+}
+
+.board-cell { 
+  flex-basis: 32%;
+  height: 32%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#startButton:hover,.board-cell:hover { 
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#startButton:active,.board-cell:active { 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.letter {
+  color:aliceblue;
+  font-size: 10vmin;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#startButton {
+  width: 60vmin;
+  font-size: 8vmin;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#messageBox {
+  width:fit-content;
+  font-size: 5vmin;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 5vh auto;
+  display: inline-block;
+ }
+
+input {
+  width:20vw;
+  font-size: 5vmin;
+  margin-bottom: 0.7vmin;
+}
+
+#resetName {
+  font-size: 5vmin;
+  background-color: white;
+  border: 0;
+}
+
+#resetName:hover {
+  text-shadow: black 0 0 10px;
+  color: whitesmoke;
+}
